@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      button {
+        text-transform: uppercase;
+        width: 100px;
+        font-size: 10px;
+        letter-spacing: 2px;
+        background-color: white;
+        color: hsl(0, 0%, 0%);
+        border: solid;
+      }
+      .title-part {
+        background-image: url("images/desktop/image-hero.jpg");
+        /* width: 1200px; */
+        padding: 40px;
+        gap: 2rem;
+      }
+      /* .navbar {
+        display: flex;
+        gap: 1rem;
+      } */
+      .nav-about {
+        display: flex;
+        color: hsl(0, 0%, 100%);
+        gap: 70%;
+      }
+      .navbar-img {
+        width: 150px;
+      }
+      .navbar-info {
+        width: 400px;
+        margin-top: 80px;
+        padding: 1.5rem;
+        text-transform: uppercase;
+        font-size: 40px;
+        letter-spacing: 2px;
+        box-sizing: border-box;
+        color: hsl(0, 0%, 100%);
+        border-style: solid;
+      }
+      .side-navbar {
+        display: flex;
+        gap: 15px;
+        font-size: 12px;
+      }
+      .description-part {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        width: 1000px;
+        margin-top: 8rem;
+      }
+      .description-part-left {
+        margin-left: 80px;
+        width: 50%;
+        /* background-image: url("./images/desktop/image-interactive.jpg"); */
+      }
+      .description-part-right {
+        width: 50%;
+        line-height: 30px;
+      }
+      .describtion-about {
+        margin-top: 10px;
+      }
+      .description-part-right p {
+        text-transform: uppercase;
+        font-size: 30px;
+        letter-spacing: 5px;
+      }
+      /* .creativity-part {
+        position: relative;
+      } */
+      .creativity-part-top {
+        display: flex;
+        gap: 40%;
+        margin-top: 80px;
+      }
+      .creativity-part-top p {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 30px;
+        margin-left: 80px;
+      }
+
+      .image-container {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        /* color: hsl(0, 0%, 100%); */
+        position: absolute;
+        /* bottom: 2px; */
+        margin-top: 80px;
+        margin-bottom: 10px;
+      }
+      /* footer {
+        background-color: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+      } */
+      /* .footer-icon {
+        display: flex;
+        background-color: black;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="title-part">
+      <div class="navbar">
+        <div class="nav-about">
+          <div class="navbar-img"><img src="./images/logo.svg" /></div>
+          <div class="side-navbar">
+            <a>About</a>
+            <a>Careers</a>
+            <a>Events</a>
+            <a> Products</a>
+            <a>Support</a>
+            <!-- <a href="Support">Support</a> -->
+          </div>
+        </div>
+        <div class="navbar-info">Immersive experiences that deliver</div>
+      </div>
+    </div>
+
+    <div class="description-part">
+      <div class="description-part-left">
+        <img src="./images/desktop/image-interactive.jpg" />
+      </div>
+      <div class="description-part-right">
+        <p>The leader in interactive VR</p>
+        <div class="describtion-about">
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </div>
+      </div>
+    </div>
+
+    <div class="creativity-part">
+      <div class="creativity-part-top">
+        <p>Our creations</p>
+        <button>See all</button>
+      </div>
+      <div class="image-container">
+        <div>
+          <img src="./images/desktop/image-deep-earth.jpg" /> Deep earth
+        </div>
+        <div>
+          <img src="./images/desktop/image-night-arcade.jpg" /> Night arcade
+        </div>
+        <div>
+          <img src="./images/desktop/image-soccer-team.jpg" /> Soccer team VR
+        </div>
+        <div><img src="./images/desktop/image-grid.jpg" />The grid</div>
+        <div>
+          <img src="./images/desktop/image-from-above.jpg" />From up above VR
+        </div>
+        <div>
+          <img src="./images/desktop/image-pocket-borealis.jpg" />Pocket
+          borealis
+        </div>
+        <div>
+          <img src="./images/desktop/image-curiosity.jpg" />The curiosity
+        </div>
+        <div>
+          <img src="./images/desktop/image-fisheye.jpg" />Make it fisheye
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer>
+      <div>
+        <div><img src="./images/logo.svg" /></div>
+        <a>About</a>
+        <a>Careers</a>
+        <a>Events</a>
+        <a> Products</a>
+        <a>Support</a>
+      </div>
+      <div class="footer-icon">
+        <img src="./images/icon-facebook.svg" />
+        <img src="./images/icon-twitter.svg" />
+        <img src="./images/icon-instagram.svg" />
+        <img src="./images/icon-pinterest.svg" />
+        <p>© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </footer> -->
+  </body>
+</html>
